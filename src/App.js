@@ -7,7 +7,7 @@ import ProductList from "./components/ProductList/ProductList";
 
 
 function App() {
-    const {onToggleButton, tg} = useTelegram();
+    const {tg} = useTelegram();
 
     useEffect(() => {
         tg.ready()
