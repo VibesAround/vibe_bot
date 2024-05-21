@@ -2,6 +2,8 @@ import './App.css';
 import {useEffect} from "react";
 import {useTelegram} from "./components/hooks/useTelegram";
 import {Header} from "./components/Header/Header";
+import {Route, Routes, Router} from "react-router-dom";
+import ProductList from "./components/ProductList/ProductList";
 
 
 function App() {
@@ -14,8 +16,13 @@ function App() {
 
   return (
     <div className="App">
-        <header className="App-header"></header>
-        <button onClick={onToggleButton}>toggle</button>
+        <Header />
+        <Routes>
+            <Route index element={<ProductList />}/>
+            <Route path={'/form'} element={<Form />}/>
+        </Routes>
+
+        </Header>
     </div>
   );
 }
