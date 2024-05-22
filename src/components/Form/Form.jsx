@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.css'
+import './Form/Form.css'
 
 const Form = () => {
     return (
@@ -17,11 +17,11 @@ const Form = () => {
             />
             <select className={'select'}>
                 <option value={'physical'}>Показал друг</option>
-                <option value={'physical'}>Рассылка в Телеграм</option>
-                <option value={'physical'}>Увидел в канале</option>
-                <option value={'physical'}>Интернет</option>
+                <option value={'legal'}>Интернет</option>
             </select>
 
         </div>
     );
 };
+
+export default Form;

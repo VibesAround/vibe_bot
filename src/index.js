@@ -9,8 +9,7 @@ root.render(
   <React.StrictMode>
       <BrowserRouter>
           <App />
-
       </BrowserRouter>
-    <App />
   </React.StrictMode>
 );
+
